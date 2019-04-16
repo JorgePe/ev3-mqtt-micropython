@@ -1,7 +1,7 @@
 # ev3-mqtt-micropython
 Using LEGO MINDSTORMS EV3 MicroPyhton with MQTT
 
-LEGO MicroPyhton release for MINDSTORMS EV3 includes 'umqtt.simple' and 'umqtt.robust' modules. This allows us to integrate our EV3 brick on a IoT environment through MQTT. No need to dig into SSH or shell commands - just a Pyhton IDE that can connect to the EV3 is required, like the Visual Studio Code with the LEGO EV3 MicroPython extension.
+LEGO MicroPyhton release for MINDSTORMS EV3 includes 'umqtt.simple' and 'umqtt.robust' modules. This allows us to integrate our EV3 brick on a IoT environment through MQTT (over Wi-Fi). No need to dig into SSH or shell commands - just a Pyhton IDE that can connect to the EV3 is required, like the Visual Studio Code with the LEGO EV3 MicroPython extension.
 
 We just need to import the required module, instantiate a MQTTClient and connect it to a MQTT broker:
 
