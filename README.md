@@ -31,7 +31,8 @@ client.set_callback(getmessages)
 client.subscribe(MQTT_Topic)
 ```
 
-It's better to examine the included [main.py](https://github.com/JorgePe/ev3-mqtt-micropython/blob/master/main.py) script. It's meant to run on several EV3 bricks, changing just the 'MQTT_ClientID' on each. The video bellow shows two bricks ('Iota' and 'Alpha') listening to the same topic and moving the motor axle to the position received on it.
+It's better to examine the included [main.py](https://github.com/JorgePe/ev3-mqtt-micropython/blob/master/main.py) script. It's meant to run on several EV3 bricks, using the hostname of each brick as the 'MQTT_ClientID' (assuming that default hostname wast changed after installation). The video bellow shows two bricks ('Iota' and 'Alpha') listening to the same topic and moving the motor axle to the position received on it.
 
 [![EV3 MicroPython IoT](https://i9.ytimg.com/vi/UIqabk5VxZ0/mq1.jpg?sqp=CIiG2OUF&rs=AOn4CLD_D7mT6BSuXjQunY9w5N_CCmF_Cw)](https://youtu.be/UIqabk5VxZ0 "Micro:bit Ultrasonic Sensor and EV3")
 
+Please note that this only works with a MQTT broker. There are public brokers available (like 'test.mosquitto.org') but we can run our own broker on our computer (just get the proper ['mosquitto'](https://mosquitto.org/) package for you system) or even on one of our EV3 (the ev3dev image inlcudes the whole mosquitto package, just start the broker service with 'sudo services mosquitto start').
