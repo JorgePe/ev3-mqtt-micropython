@@ -35,4 +35,4 @@ It's better to examine the included [main.py](https://github.com/JorgePe/ev3-mqt
 
 [![EV3 MicroPython IoT](https://i9.ytimg.com/vi/UIqabk5VxZ0/mq1.jpg?sqp=CIiG2OUF&rs=AOn4CLD_D7mT6BSuXjQunY9w5N_CCmF_Cw)](https://youtu.be/UIqabk5VxZ0 "Micro:bit Ultrasonic Sensor and EV3")
 
-Please note that this only works with a MQTT broker. There are public brokers available (like 'test.mosquitto.org') but we can run our own broker on our computer (just get the proper ['mosquitto'](https://mosquitto.org/) package for you system) or even on one of our EV3 (the ev3dev image inlcudes the whole mosquitto package, just start the broker service with 'sudo services mosquitto start').
+Please note that this only works with a MQTT broker. There are public brokers available (like 'test.mosquitto.org') but we can run our own broker on our computer (just get the proper ['mosquitto'](https://mosquitto.org/) package for you system) or even on one of our EV3 (the ev3dev image inlcudes the whole mosquitto package, just start the broker service with 'sudo services mosquitto start'). There are also some Apps for mobile devices that can do the same.
