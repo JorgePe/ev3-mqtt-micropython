@@ -18,11 +18,11 @@ motor = Motor(Port.A)
 # get hostname to use as Client ID
 # assuming each EV3 brick had it's hostname changed after installation
 ########################################################################
-os.system('hostname > hostname.txt')
-file = open('hostname.txt', 'r')
+os.system('hostname > /dev/shm/hostname.txt')
+file = open('/dev/shm/hostname.txt', 'r')
 MQTT_ClientID = file.readline().rstrip('\n')
 file.close()
-os.system('rm hostname.txt')
+os.system('rm /dev/shm/hostname.txt')
 
 ########################################################################
 # There are public brokers available but you we can also install
